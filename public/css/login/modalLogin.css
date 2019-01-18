@@ -1,0 +1,118 @@
+/* ESTILOS DEL MODAL PARA LOGIN*/
+
+/* Container para poder centrar el boton que llama al modal */
+#btnContainer{
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Boton que llama al modal */
+#myBtn{
+  z-index: 50;
+  background:#9bca3c62;
+  color:rgb(255, 255, 255);
+  border:none;
+  position: relative;;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+
+}
+
+#myBtn:hover{
+  background:rgba(255, 255, 255, 0);
+  color:white;
+}
+#myBtn:before,#myBtn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: white;
+  transition:400ms ease all;
+}
+#myBtn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#myBtn:hover:before,#myBtn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}  
+
+/* --------------------------------------------------------------------------------- */
+/* El modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+/* --------------------------------------------------------------------------------- */
+  /* Modal Content */
+.modal-content {
+  background-color: #fefefe60;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  /* height: 55%; */
+  border-radius: 15px;
+  /* position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%); */
+  margin: 10% auto; /* 5% from the top, 15% from the bottom and centered */
+}
+  
+/* --------------------------------------------------------------------------------- */
+/* Boton de cierre */
+.close {
+  color: #222222;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #d1d1d1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Animacion de zoom al abrir el modal */
+.animate {
+    -webkit-animation: animatezoom 0.4s;
+    animation: animatezoom 0.4s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}

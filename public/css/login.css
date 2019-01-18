@@ -1,0 +1,131 @@
+/* ESTILO GLOBAL DEL LOGIN */
+
+@import url(login/modalLogin.css);            /* Estilos para el modal de credenciales */
+@import url(login/backgroundLogin.css);       /* Estilos para el fondo animado */
+@import url(herramientas/loader.css);         /* Estilos para el loader */
+@import url(herramientas/modalError.css);     /* Estilos para el modal de errores en logueo */
+@import url(herramientas/scrollbar.css);      /* Estilos para la scrollbar personalizada */
+
+/* --------------------------------------------------------------------------------- */
+/* Definicion del body */
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Estilos del form */
+form {
+  width: 100%;
+  height: 100%;;
+  margin-top: 2% auto;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Estilos del agrupador de input y label (asi estaba en el ejemplo) */
+.group {
+  position: relative;
+  margin: 15% 0% 15% 0%;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Estilo general de los input */
+input {
+  background: none;
+  color: #c6c6c6;
+  font-size: 1.5vw;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c6c6c6;
+}
+input:focus{
+  outline: none;
+}
+input:focus ~ label, input:valid ~ label {
+  top: -50%;
+  font-size: 1.5vw;
+  color: #9aca3c;
+}
+input:focus ~ .bar:before {
+  width: 100%;
+}
+
+input[type="password"] {
+  letter-spacing: 0.3em;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Estilos del label y .bar, para el efecto que tiene el input */
+label {
+  color: #c6c6c6;
+  font-size: 1.5vw;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bar:before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0px;
+  position: absolute;
+  background: #9aca3c;
+  transition: 300ms ease all;
+  left: 0%;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Boton de submit para el form */
+.submitButton {
+  cursor: pointer;
+  font-size: 1.1vw;
+  background: #9bca3cc2;
+  color: #bce0fb;
+  border: 2px solid #9bca3cc2;
+  padding: 10px 20px;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 100%;
+  transition: .5s;
+}
+
+.submitButton:hover, .submitButton:focus {
+  background: #0d89ee00;
+  color: #deeffd;
+}
+
+.submitButton:disabled{
+  background: #8b8b8bc2;
+  cursor: default;
+  border-color: #8b8b8bc2;
+  color: #bce0fb;
+}
+
+/* --------------------------------------------------------------------------------- */
+/* Esto es para sacarle el autoincrementador al input de tipo number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

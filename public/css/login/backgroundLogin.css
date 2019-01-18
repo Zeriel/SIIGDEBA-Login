@@ -1,0 +1,10 @@
+/* ESTILOS DEL BACKGROUND */
+/* El mismo se obtuvo de: */
+/*  */
+
+canvas  {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:#000000;
+}

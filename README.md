@@ -1,6 +1,9 @@
-# SIIGDEBA - Login
-Vista de login descartada del proyecto SIIGDEBA, el cual por ser de trabajo se encuentra en un repositorio privado.
+# Sistema Integral de Incidencias GDEBA
+Proyecto solicitado por la Dirección Provincial de Modernización Administrativa.
+* Fecha de inicio: 14/01/2019
+* Integrantes:
+  - Federico Nicolás Moradillo
+  - Federico Leandro Gatti
 
-Subo el desarrollo de este login en un repositorio público dado que, como el mismo fue descartado por integración con el login de otra aplicación, ya no posee código relevante al proyecto asociado y sirve sólo de ejemplo de desarrollo.
-
-El mismo está desarrollado en Laravel 5.4.
+# Objetivo
+Desarrollar un Sistema facilitador para incidencias ya analizadas y con resolución conocida. Se desarrolla bajo el framework Laravel 5.4
