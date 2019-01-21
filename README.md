@@ -1,9 +1,2 @@
-# Sistema Integral de Incidencias GDEBA
-Proyecto solicitado por la Dirección Provincial de Modernización Administrativa.
-* Fecha de inicio: 14/01/2019
-* Integrantes:
-  - Federico Nicolás Moradillo
-  - Federico Leandro Gatti
-
-# Objetivo
-Desarrollar un Sistema facilitador para incidencias ya analizadas y con resolución conocida. Se desarrolla bajo el framework Laravel 5.4
+# Sistema Integral de Incidencias GDEBA - Login
+Desarrollo de un login descartado por integración con el login de otra App asociada. Ya que este desarrollo no tiene ninguna relación con el que terminó siendo el proyecto (ubicado en un repositorio privado) lo subo en un repositorio público sólo a modo de ejemplo.
