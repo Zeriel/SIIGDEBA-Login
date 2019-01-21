@@ -20,7 +20,7 @@
             <p id="titulo">{{ $errors->first('titulo') }}</p>
             <hr>
             <p id="cuerpo">{{ $errors->first('motivo') }}<br>{{ $errors->first('motivo2') }}</p>
-            <button class="errorClose">Aceptar</button>
+            <button class="errorClose" id="errorClose">Aceptar</button>
         </div> 
     </div>
 
@@ -73,6 +73,9 @@
         </div>
     
     </div>
+    
+    {{-- JQuery --}}
+    <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 
     {{-- Inocación a los JS --}}
     <script src="{{ asset('js/login/modalLogin.js') }}"></script>
